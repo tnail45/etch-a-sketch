@@ -14,7 +14,7 @@ function changeBackgroundColor() {
     this.style.backgroundColor = "black";
 }
 
-function createGridCells() {
+function createGridCells(squaresPerSide) {
     const numOfSquares = (squaresPerSide * squaresPerSide);
     const widthAndHeight = `${(GRIDSIDE / squaresPerSide) - 2}px`;
 
