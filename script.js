@@ -14,7 +14,7 @@ function changeBackgroundColor() {
     this.style.backgroundColor = "black";
 }
 
-function createGridCells(squaresPerSide) {
+function createGridCells() {
     const numOfSquares = (squaresPerSide * squaresPerSide);
     const widthAndHeight = `${(GRIDSIDE / squaresPerSide) - 2}px`;
 
@@ -27,6 +27,12 @@ function createGridCells(squaresPerSide) {
         sketchArea.appendChild(gridCell);
 
         gridCell.addEventListener("mouseover", changeBackgroundColor);
+    }
+}
+
+function clearGridCells() {
+    while (sketchArea.firstChild) {
+        sketchArea.removeChild(sketchArea.firstChild);
     }
 }
 
