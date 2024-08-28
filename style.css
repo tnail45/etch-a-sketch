@@ -10,10 +10,39 @@ body {
 #sketch-area {
     display: flex;
     flex-wrap: wrap;
-    margin: 100px auto;
+    margin: 100px auto 15px auto;
     background-color: white;
 }
 
 .cell {
     border: 1px solid whitesmoke;
 }
+
+#slider-container {
+    margin: 0 auto;
+}
+
+.slider {
+    appearance: none;
+    height: 25px;
+    width: 100%;
+    outline: none;
+    transition: .2s;
+    cursor: pointer;
+}
+
+#slider-value {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+ .slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+ }
